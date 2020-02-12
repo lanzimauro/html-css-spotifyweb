@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Menù laterale */
+aside {
+    float: left;
+    width: 200px;
+    height: 100vh;
+    background-color: #040404;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+}
+
+aside .logo i {
+    color: white;
+    font-size: 50px;
+}
+
+.logo .icona,
+.logo .spotify {
+    float: left;
+    padding: 10px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.menu-left {
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu-icon {
+    padding: 10px;
+    border: 2px solid #040404;
+}
+
+.menu-left .home i {
+    float: left;
+    margin: 0 20px;
+}
+
+.menu-left .home p {
+    float: left;
+}
+
+.menu-left .search i {
+    float: left;
+    margin: 0 20px;
+}
+
+.menu-left .search p {
+    float: left;
+}
+
+.menu-left .library i {
+    float: left;
+    margin: 0 18px;
+}
+
+.menu-left .library p {
+    float: left;
+}
+
+.menu-icon:hover {
+    border-left-color: green;
+    cursor: pointer;
+}
+
+.menu-playlist {
+    height: 400px;
+    background-color: grey;
+    padding: 0 30px;
+}
+
+.menu-playlist h3 {
+    text-align: left;
+}
+
+/* fine menù laterale */
+/* header */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    float: left;
+    width: calc(100% - 200px);
+    background-color: #0b0b0b;
+    line-height: 70px;
+}
+
+header button {
+    margin: 20px 40px;
+    padding: 10px 20px;
+    background-color: inherit;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+
+header button:hover {
+    background-color: #f5f5f5;
+    color: #040404;
+    cursor: pointer;
+}
