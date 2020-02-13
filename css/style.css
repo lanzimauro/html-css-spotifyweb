@@ -361,7 +361,7 @@ main h3 {
 }
 
 .card {
-    width: 20%;
+    flex: 0 0 200px;
     text-align: center;
     color: #ffffff;
     margin-right: 30px;
@@ -384,15 +384,12 @@ main h3 {
 .card .immagine .start {
     font-size: 70px;
     line-height: 170px;
-    visibility: hidden;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.card .immagine .start:hover {
-    visibility: visible;
-}
-
-.card .immagine:hover {
-    opacity: 0.2;
+.card .immagine:hover .start {
+    display: block;
 }
 
 .img1 {
@@ -432,7 +429,7 @@ main small {
 }
 
 .card-circle {
-    width: 20%;
+    flex: 0 0 200px;
     text-align: center;
     color: #ffffff;
     margin-right: 30px;
@@ -456,13 +453,35 @@ main small {
 .card-circle .immagine .start {
     font-size: 70px;
     line-height: 170px;
-    visibility: hidden;
+    border-radius: 50%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.card-circle .immagine .start:hover {
-    visibility: visible;
+.card-circle .immagine:hover .start {
+    display: block;
 }
 
-.card-circle .immagine:hover {
-    opacity: 0.2;
+
+@media screen and (max-width: 739px) {
+    aside {
+        width: 80px;
+    }
+
+    aside p,
+    aside h1,
+    aside h3,
+    aside .plus,
+    aside .profile {
+        display: none;
+    }
+
+    main {
+        width: calc(100% - 80px);
+    }
+
+    header {
+        width: calc(100% - 80px);
+        left: 80px;
+    }
 }
